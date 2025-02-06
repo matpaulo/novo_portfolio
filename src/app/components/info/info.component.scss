@@ -1,4 +1,4 @@
-@import "../../../color-variables.scss";
+@use "../../../color-variables.scss" as colors;
 
 .info-section {
   padding: 50px 50px;
@@ -14,7 +14,7 @@
   h3 {
     font-weight: 400;
     font-size: 24px;
-    color: $primary-text;
+    color: colors.$primary-text;
     font-family: "Poppins", sans-serif;
   }
 
@@ -22,8 +22,8 @@
     padding-top: 10px;
     background: -webkit-linear-gradient(
       360deg,
-      $primary-color,
-      $secondary-color
+      colors.$primary-color,
+      colors.$secondary-color
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,7 +37,7 @@
     font-family: "Montserra", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: $secondary-text;
+    color: colors.$secondary-text;
   }
 }
 

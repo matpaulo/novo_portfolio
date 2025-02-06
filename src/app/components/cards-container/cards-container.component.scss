@@ -1,4 +1,4 @@
-@import "../../../color-variables.scss";
+@use "../../../color-variables.scss" as colors;
 
 .container {
   padding: 20px 50px;
@@ -13,7 +13,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 36px;
-  color: $primary-text;
+  color: colors.$primary-text;
   padding-bottom: 40px;
 }
 

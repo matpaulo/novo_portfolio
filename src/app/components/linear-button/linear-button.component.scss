@@ -1,4 +1,4 @@
-@import "../../../color-variables.scss";
+@use "../../../color-variables.scss" as colors;
 
 .btn {
   border: none;
@@ -9,7 +9,7 @@
   cursor: pointer;
   padding: 10px 20px;
   color: white;
-  background: -webkit-linear-gradient(360deg, $primary-color, $secondary-color);
+  background: -webkit-linear-gradient(360deg, colors.$primary-color, colors.$secondary-color);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;

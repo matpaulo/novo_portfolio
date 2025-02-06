@@ -1,4 +1,4 @@
-@import "../../../color-variables.scss";
+@use "../../../color-variables.scss" as colors;
 
 .project-card {
   height: 230px;
@@ -23,17 +23,17 @@
   p {
     padding-top: 10px;
     font-size: 16px;
-    color: $secondary-text;
+    color: colors.$secondary-text;
     display: flex;
     justify-content: flex-start;
   }
 }
 
 .categorie {
-  border: 1px solid $primary-color;
+  border: 1px solid colors.$primary-color;
   color: white;
   border: none;
-  background-color: $primary-color;
+  background-color: colors.$primary-color;
   border-radius: 2px;
   padding: 2px;
   font-weight: 600;
