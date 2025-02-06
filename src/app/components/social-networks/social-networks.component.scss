@@ -1,0 +1,19 @@
+@import "../../../color-variables.scss";
+
+.social-networks-component {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+  }
+}
+
+.social-networks-container {
+  padding: 50px 0px;
+  cursor: pointer;
+}

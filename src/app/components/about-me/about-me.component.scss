@@ -1,0 +1,33 @@
+@import "../../../color-variables.scss";
+
+.about-me {
+  padding: 20px 50px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-weight: 500;
+    font-size: 36px;
+    color: $primary-text;
+  }
+
+  p {
+    color: $secondary-text;
+    margin-top: 30px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    border-left: 10px solid $primary-color;
+  }
+}
+
+@media (min-width: 1080px) {
+  .about-me {
+    div {
+      max-width: 1150px;
+    }
+  }
+}

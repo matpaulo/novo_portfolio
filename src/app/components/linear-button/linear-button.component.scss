@@ -1,0 +1,16 @@
+@import "../../../color-variables.scss";
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 36px;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  background: -webkit-linear-gradient(360deg, $primary-color, $secondary-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}

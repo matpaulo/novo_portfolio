@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  font-family: "Montserrat", sans-serif;
+
+  div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  p {
+    padding-top: 25px;
+  }
+
+  
+}
+
+.projects {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}

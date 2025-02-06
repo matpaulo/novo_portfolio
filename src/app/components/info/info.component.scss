@@ -1,0 +1,69 @@
+@import "../../../color-variables.scss";
+
+.info-section {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+
+  img {
+    align-self: center;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: $primary-text;
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1 {
+    padding-top: 10px;
+    background: -webkit-linear-gradient(
+      360deg,
+      $primary-color,
+      $secondary-color
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+  }
+
+  p {
+    padding: 20px 0px;
+    font-family: "Montserra", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: $secondary-text;
+  }
+}
+
+.order1 {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order2 {
+  order: 2;
+}
+
+@media (min-width: 1080px) {
+  .info-section {
+    flex-direction: row;
+
+    div {
+      max-width: 600px;
+    }
+  }
+  .order1 {
+    order: 2;
+  }
+  .order2 {
+    order: 1;
+  }
+}
