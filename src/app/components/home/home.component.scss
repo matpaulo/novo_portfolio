@@ -10,7 +10,13 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   padding-bottom: 50px;
+}
+
+@media (min-width: 465px) {
+  .footer {
+    font-size: 24px;
+  }
 }

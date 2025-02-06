@@ -1,8 +1,8 @@
 @use "../../../color-variables.scss" as colors;
 
 .project-card {
-  height: 230px;
-  width: 500px;
+  height: 180px;
+  width: 240px;
   border-radius: 4px;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
@@ -17,12 +17,12 @@
 
   h4 {
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   p {
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: colors.$secondary-text;
     display: flex;
     justify-content: flex-start;
@@ -40,8 +40,23 @@
   font-size: 12px;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 465px) {
+  .container {
+    padding: 20px 50px;
+  }
+
+  .project-card h4 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
   .project-card {
-    width: 445px;
+    height: 230px;
+    width: 500px;
   }
 }

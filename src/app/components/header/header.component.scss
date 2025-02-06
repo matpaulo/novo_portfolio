@@ -1,19 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 4px 10px;
   font-family: "Montserrat", sans-serif;
 
   div {
     display: flex;
-    gap: 20px;
-  }
-  
-  p {
-    padding-top: 25px;
+    gap: 10px;
   }
 
-  
+  p {
+    padding-top: 12px;
+    font-size: 14px;
+  }
 }
 
 .projects {
@@ -21,4 +20,21 @@
   background: none;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 465px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+  }
+
+  .header div {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header p {
+    padding-top: 10px;
+  }
 }

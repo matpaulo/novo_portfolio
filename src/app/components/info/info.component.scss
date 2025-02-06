@@ -1,7 +1,7 @@
 @use "../../../color-variables.scss" as colors;
 
 .info-section {
-  padding: 50px 50px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,11 +9,13 @@
 
   img {
     align-self: center;
+    width: 240px;
+    height: 180px;
   }
 
   h3 {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     color: colors.$primary-text;
     font-family: "Poppins", sans-serif;
   }
@@ -29,14 +31,14 @@
     -webkit-text-fill-color: transparent;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 56px;
+    font-size: 30px;
   }
 
   p {
     padding: 20px 0px;
     font-family: "Montserra", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     color: colors.$secondary-text;
   }
 }
@@ -52,14 +54,57 @@
   order: 2;
 }
 
+@media (min-width: 465px) {
+  .info-section {
+    padding: 50px 50px;
+  }
+
+  .info-section img {
+    width: 280px;
+    height: 220px;
+  }
+
+  .info-section h3 {
+    font-size: 24px;
+  }
+
+  .info-section h1 {
+    font-size: 56px;
+  }
+
+  .info-section p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-section img {
+    width: 448px;
+    height: 369px;
+  }
+
+  .info-section h3 {
+    font-size: 24px;
+  }
+
+  .info-section h1 {
+    font-size: 56px;
+  }
+
+  .info-section p {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 1080px) {
   .info-section {
     flex-direction: row;
-
-    div {
-      max-width: 600px;
-    }
   }
+
+  .info-section div {
+    max-width: 600px;
+  }
+
   .order1 {
     order: 2;
   }

@@ -4,9 +4,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
   h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 500;
   }
 }
@@ -14,4 +20,15 @@
 .social-networks-container {
   padding: 50px 0px;
   cursor: pointer;
+}
+
+@media (min-width: 465px) {
+  .social-networks-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-networks-component h1 {
+    font-size: 36px;
+  }
 }
